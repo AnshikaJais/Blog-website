@@ -161,8 +161,8 @@ def show_post(post_id):
 @login_required
 @app.route("/about")
 def about():
-    if current_user.is_authenticated:
-        return render_template("about.html", current_user=current_user)
+    return render_template("about.html", current_user=current_user)
+    
 
 
 @login_required
